@@ -4,10 +4,10 @@ class PagesController < ApplicationController
 
 	def resume
 	end
-	def about_me
+	def about
 	end
 
-	def contact_me
+	def contact
 	end
 	def blog
 	end

@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'pages/resume'
   get 'pages/about'
 
-  resource :posts
+  resources :posts
 
 
 

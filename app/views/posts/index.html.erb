@@ -1,0 +1,17 @@
+<h1>Listing all blog posts</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @posts.each do |k| %>
+    <tr>
+      <td><%= k.title %></td>
+      <td><%= k.text %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'Back to home', root_path %>
