@@ -10,6 +10,8 @@
     <tr>
       <td><%= k.title %></td>
       <td><%= k.text %></td>
+      <td><%= link_to 'Show', post_path(k) %></td>
+      <td><%= link_to 'Edit', edit_post_path(k) %></td>
     </tr>
   <% end %>
 </table>
