@@ -12,6 +12,9 @@
       <td><%= k.text %></td>
       <td><%= link_to 'Show', post_path(k) %></td>
       <td><%= link_to 'Edit', edit_post_path(k) %></td>
+      <td><%= link_to 'Destroy', post_path(k),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
