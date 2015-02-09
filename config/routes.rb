@@ -10,8 +10,9 @@ Rails.application.routes.draw do
   get 'pages/resume'
   get 'pages/about'
 
-  resources :posts
-
+  resources :posts do
+    resources :comments
+  end
 
 
 
